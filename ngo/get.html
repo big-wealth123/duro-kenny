@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Get Involved – Duro & Kenny Foundation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/e46c019f1c.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Ubuntu', sans-serif;
+      background: #f0f0f0;
+      color: #333;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .dark-mode {
+      background: #121212;
+      color: #f5f5f5;
+    }
+
+    .toggle-theme {
+      position: fixed;
+      top: 15px;
+      right: 20px;
+      z-index: 1000;
+      background: #0077cc;
+      border: none;
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    header {
+      background: #0077cc;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      flex: 1 1 300px;
+      max-width: 350px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card i {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #0077cc;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .cta {
+      margin-top: 3rem;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      background: #0077cc;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    /* Dark mode */
+    .dark-mode header,
+    .dark-mode footer {
+      background: #1e1e1e;
+    }
+
+    .dark-mode .card {
+      background: #1a1a1a;
+      color: #f5f5f5;
+    }
+
+    .dark-mode .card i {
+      color: #00c4ff;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
+
+  <header>
+    <h1>Get Involved</h1>
+    <p>Join our mission to empower and uplift communities</p>
+  </header>
+
+  <section>
+    <div class="cards">
+      <div class="card">
+        <i class="fas fa-hands-helping"></i>
+        <h3>Volunteer</h3>
+        <p>Support our events and outreach programs. Your time can transform lives.</p>
+        <a href="volunteer.html">Learn More</a>
+      </div>
+      <div class="card">
+        <i class="fas fa-handshake"></i>
+        <h3>Partner With Us</h3>
+        <p>Collaborate with us to bring change. Corporate or community-based, you’re welcome.</p>
+        <a href="partner.html">Partner Now</a>
+      </div>
+      <div class="card">
+        <i class="fas fa-bullhorn"></i>
+        <h3>Spread the Word</h3>
+        <p>Advocate for our cause online or in your community. Awareness creates change.</p>
+        <a href="spread.html">Share Now</a>
+      </div>
+    </div>
+
+    <div class="cta">
+      <p>Every action counts. Be the reason someone smiles today.</p>
+      <a href="contact.html"><button>Contact Us</button></a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Duro & Kenny Foundation. All Rights Reserved.
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>

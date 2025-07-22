@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volunteer Website</title>
+  <link rel="stylesheet" href="volum.css" />
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Ubuntu">
+</head>
+<body>
+   
+<section id="volunteer-form">
+  <h2>Become a Volunteer</h2>
+  <p>Fill out the form below to join our volunteer team.</p>
+  <form>
+    <input type="text" name="fullname" placeholder="Full Name" required />
+    <input type="email" name="email" placeholder="Email Address" required />
+    <input type="tel" name="phone" placeholder="Phone Number" required />
+
+    <label for="interest">Area of Interest</label>
+    <select name="interest" id="interest" required>
+      <option value="">-- Select --</option>
+      <option value="health">Community Health</option>
+      <option value="education">Child Education</option>
+      <option value="environment">Environment</option>
+    </select>
+
+    <label for="availability">Availability</label>
+    <input type="text" name="availability" placeholder="e.g. Weekends, Weekdays" required />
+
+    <textarea name="message" placeholder="Why do you want to volunteer?" rows="4" required></textarea>
+
+    <button type="submit">Submit Application</button>
+  </form>
+</section>
+
+</body>
+</html>

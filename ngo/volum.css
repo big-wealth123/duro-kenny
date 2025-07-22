@@ -1,0 +1,77 @@
+body{
+    font-family: 'Ubuntu',  sans-serif;
+}
+
+
+#volunteer-form {
+  background-color: #ffffff;
+  padding: 5px 40px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+#volunteer-form h2 {
+  margin-bottom: 10px;
+  color: #00695c;
+}
+
+#volunteer-form p {
+  margin-bottom: 25px;
+  color: #444;
+}
+
+#volunteer-form form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#volunteer-form input,
+#volunteer-form select,
+#volunteer-form textarea {
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+}
+
+#volunteer-form textarea {
+  resize: vertical;
+}
+
+#volunteer-form label {
+  font-weight: bold;
+  text-align: left;
+  color: #333;
+}
+
+#volunteer-form button {
+  background: #00695c;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#volunteer-form button:hover {
+  background: #004d40;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  #volunteer-form form {
+    padding: 0 10px;
+    text-align: start;
+  }
+
+  #volunteer-form h2 {
+    font-size: 1.4rem;
+  }
+}
