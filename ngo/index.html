@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO</title>
+</head>
+<link rel="stylesheet" href="m.css">
+<link rel="stylesheet"   href="https://fonts.googleapis.com/css?family=PT Sans">
+<script src="https://kit.fontawesome.com/e46c019f1c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Ubuntu">
+<body>
+    <header>
+        <div>
+            <main>
+                <img src="./images/reall2-removebg-preview.png" alt="" >
+                <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
+
+                  <aside>
+                <a href="#sec1">Home</a>
+                <a href="#sec2">About Us</a>
+                <a href="#sec3">Our Mission</a>
+                <a href="#sec4">Programs</a>
+                <a href="#sec5"> Success Stories</a>
+                <a href="#sec6">Get Involved</a>
+                <a href="#sec7">Contact Us</a>
+                <a href="#sec8">Donates</a>
+                <!-- <a href=""><i class="fa-solid fa-bars"></i></a> -->
+                </aside>
+            </main>
+        </div>
+    </header>
+    <section >
+         <div >
+            <br><br><br><br><br>
+            <h1> Empowering Communities, Changing Lives  </h1>
+            <p>Welcome to Duro & Kenny Foundation — committed to making a positive impact in lives through education, health, and empowerment.</p>
+
+            <button> <a href="./get.html"> Get Involved</a></button>
+         </div>
+        
+    </section>
+    <section id="sec2">
+     <br><br><br><br>
+        <span>Abouts Us</span> <br>
+        <div>
+           <aside>
+            <img src="./images/sec2.jpg" alt="" width="80%">
+           </aside>
+           <aside>
+            <p> The Duro & Kenny Foundation is a<br> nonprofit  organization driven by the passion<br> to make meaningful change. <br> </p>
+            <br><br><b></b>
+            <p>We serve underserved communities <br> through education, health, and empowerment <br>programs.</p>
+           </aside>
+         </div>
+    </section>
+    <section  id="sec3">
+        <span>Our Mission</span>
+        <div>
+            <aside>
+                <p> To create sustainable change by <br>empowering individuals with the tools,<br> knowledge, and support to thrive.</p>
+            </aside>
+            <aside>
+                <img src="./images/sec3.jpg" alt="" width="80%">
+            </aside>
+        </div>
+    </section>
+    <section>
+        <span>Programs</span>
+        <div>
+            <aside>
+                <img src="./images/sec4.jpg" alt="" width="80%">
+            </aside>
+            <aside>
+             <ul>
+                <li> Education Support:</li>
+                <p>Scholarships, school kits, mentoring.</p>
+                <li> Healthcare Access:</li>
+                <p>Medical outreach, maternal care.</p>
+                <li>Youth Empowerment:</li>
+                <p>Skills training, entrepreneurship programs.</p>
+             </ul>   
+            </aside>
+        </div>
+    </section>
+    <!-- Continue from previous code -->
+    <section>
+        <span>Success Stories</span>
+        <div>
+            <!-- <aside>
+                <img src="./images/image succes.jpg" alt="Smiling kids" width=69%>
+            </aside> -->
+            <aside>
+                <p>We've transformed hundreds of lives through scholarships, skill development, and access to healthcare. Read how individuals like Mary, who now runs a successful tailoring business, got their start with us.</p>
+            </aside>
+        </div>
+    </section>
+
+     <section>
+        <span>Get Involved</span>
+        <div>
+            <aside>
+                <ul>
+                  <li>
+                      <a href="/volunteer.html">Volunteer</li></a>
+                    <p>Join our team to create real impact on the ground.</p>
+                    <li>
+                        <a href="./partner.html">Partner With Us</a></li>
+                    <p>We collaborate with schools, clinics, and entrepreneurs.</p>
+                    <li><a href="./spread.html">Spread the Word</a></li>
+                    <p>Share our mission on social media.</p>
+                </ul>
+            </aside>
+            <aside>
+                <!-- <img src="./images/Institutrice_ivoirienne_02_0.jpg" alt="Volunteers helping" width="70%" height="70%"> -->
+            </aside>
+        </div>
+    </section> 
+
+ <section>
+        <span>Contact Us</span>
+        <div>
+            <aside>
+                <form>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </aside>
+            <aside>
+                <p><strong>Email:</strong> info@duroandkenny.org</p>
+                <p><strong>Phone:</strong> +234 800 000 0000</p>
+                <p><strong>Address:</strong> Lagos, Nigeria</p>
+            </aside>
+        </div>
+    </section>
+
+    <section>
+        <span>Donates</span>
+        <div>
+            <aside>
+                <p>Your donation helps us reach more communities. Support education, healthcare, and youth empowerment today.</p>
+                <button style="
+                padding: 6% 10%;
+                margin-top: 5%;
+                color: blue;
+                
+                
+                
+                
+                "><a href="./donate.html" 
+                style=" 
+               color: blue; 
+                
+                
+                "
+                
+                >Donate Now</a></button>
+            </aside>
+            <aside>
+                <img src="./images/1-charity-box.jpg" alt="Donation box" width="80%">
+            </aside>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Duro & Kenny Foundation. All rights reserved.</p>
+    </footer> 
+</body>
+<script>
+  const toggleBtn = document.getElementById("theme-toggle");
+  toggleBtn.onclick = () => {
+    document.body.classList.toggle("dark-mode");
+    toggleBtn.innerHTML = document.body.classList.contains("dark-mode")
+      ? '<i class="fas fa-sun"></i>'
+      : '<i class="fas fa-moon"></i>';
+  };
+</script>
+
+</html>
+
